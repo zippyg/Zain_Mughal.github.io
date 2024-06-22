@@ -15,9 +15,15 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#cv">CV</a></li>
             <li><a href="#contact" role="button">Contact</a></li>
         </ul>
     </nav>
+    <header class="container">
+        <img src="path/to/your-headshot.jpg" alt="Headshot" class="headshot">
+        <h1>Welcome to My Portfolio</h1>
+        <img src="path/to/university-logo.png" alt="University Logo" class="university-logo">
+    </header>
     <main class="container">
         <section id="about">
             <hgroup>
@@ -32,39 +38,38 @@
                 <h3>Showcasing my work</h3>
             </hgroup>
             <div class="grid">
-                <section>
-                    <hgroup>
-                        <h2>Project Title 1</h2>
-                        <h3>Subtitle or brief description</h3>
-                    </hgroup>
-                    <p>This is a brief description of the project. Explain what the project is about, the technologies used, and any challenges faced.</p>
-                    <figure>
-                        <img src="https://files.oaiusercontent.com/file-r09sSW4VmPt1qGf5zIhEq2cZ?se=2024-06-22T21%3A33%3A34Z&sp=r&sv=2023-11-03&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Da5004e40-7317-464d-bf30-75b78ab28fe1.webp&sig=5oiC1O%2BVVNuL4fljdgLJBMsFu4RYRx5XXurE7R/5fXw%3D" alt="Project 1 Image" />
-                        <figcaption><a href="#" target="_blank">View Project</a></figcaption>
-                    </figure>
-                    <h3>Technologies Used</h3>
-                    <p>List the technologies used in the project.</p>
-                    <h3>Challenges</h3>
-                    <p>Describe any challenges faced during the project and how they were overcome.</p>
-                </section>
-                <!-- Repeat the section above for each project -->
-                <section>
-                    <hgroup>
-                        <h2>Project Title 2</h2>
-                        <h3>Subtitle or brief description</h3>
-                    </hgroup>
-                    <p>This is a brief description of the project. Explain what the project is about, the technologies used, and any challenges faced.</p>
-                    <figure>
-                        <img src="https://files.oaiusercontent.com/file-r09sSW4VmPt1qGf5zIhEq2cZ?se=2024-06-22T21%3A33%3A34Z&sp=r&sv=2023-11-03&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Da5004e40-7317-464d-bf30-75b78ab28fe1.webp&sig=5oiC1O%2BVVNuL4fljdgLJBMsFu4RYRx5XXurE7R/5fXw%3D" alt="Project 2 Image" />
-                        <figcaption><a href="#" target="_blank">View Project</a></figcaption>
-                    </figure>
-                    <h3>Technologies Used</h3>
-                    <p>List the technologies used in the project.</p>
-                    <h3>Challenges</h3>
-                    <p>Describe any challenges faced during the project and how they were overcome.</p>
-                </section>
-                <!-- Add more project sections as needed -->
+                <div class="project-tile" onclick="location.href='project1.html'">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of Project 1.</p>
+                </div>
+                <div class="project-tile" onclick="location.href='project2.html'">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of Project 2.</p>
+                </div>
+                <div class="project-tile" onclick="location.href='project3.html'">
+                    <h3>Project Title 3</h3>
+                    <p>Brief description of Project 3.</p>
+                </div>
+                <div class="project-tile" onclick="location.href='project4.html'">
+                    <h3>Project Title 4</h3>
+                    <p>Brief description of Project 4.</p>
+                </div>
+                <div class="project-tile" onclick="location.href='project5.html'">
+                    <h3>Project Title 5</h3>
+                    <p>Brief description of Project 5.</p>
+                </div>
+                <div class="project-tile" onclick="location.href='project6.html'">
+                    <h3>Project Title 6</h3>
+                    <p>Brief description of Project 6.</p>
+                </div>
             </div>
+        </section>
+        <section id="cv">
+            <hgroup>
+                <h2>Curriculum Vitae</h2>
+                <h3>My professional background</h3>
+            </hgroup>
+            <p>Download my CV <a href="path/to/your-cv.pdf" target="_blank">here</a>.</p>
         </section>
     </main>
     <section aria-label="Subscribe example">
