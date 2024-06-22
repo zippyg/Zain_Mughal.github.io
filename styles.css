@@ -1,9 +1,9 @@
-/* Add custom styles to enhance the look of the portfolio */
+/* Dark theme styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    padding-top: 20px;
-    background-color: #f5f5f5;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 nav ul {
@@ -17,13 +17,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #e0e0e0;
     padding: 10px 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #ddd;
+    background-color: #333;
+    color: #fff;
 }
 
 header {
@@ -65,18 +66,19 @@ section {
 }
 
 .project-tile {
-    background-color: #fff;
+    background-color: #1e1e1e;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 5px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .project-tile:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    background-color: #333;
 }
 
 .project-tile h3 {
@@ -92,12 +94,12 @@ figure img {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f8f8f8;
+    background-color: #1e1e1e;
     margin-top: 40px;
 }
 
 footer small a {
-    color: #333;
+    color: #e0e0e0;
     text-decoration: none;
     margin: 0 10px;
 }
