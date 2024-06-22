@@ -36,19 +36,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px; /* Increased gap to create more space between images */
     margin-top: 20px;
 }
 
-header img.headshot, header img.university-logo {
+header img.headshot {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
     object-fit: cover;
 }
 
 header img.university-logo {
-    border-radius: 0;
+    width: auto;
+    max-height: 200px; /* Increased max height */
+    object-fit: contain;
 }
 
 .container {
