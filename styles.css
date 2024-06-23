@@ -45,7 +45,7 @@ header {
 
 header img.headshot {
     border-radius: 50%;
-    width: 200px;
+    width: 250px; /* Increased width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
 }
@@ -109,6 +109,7 @@ footer {
     background-color: #1e1e1e;
     margin-top: 40px;
     flex-shrink: 0;
+    width: 100%;
 }
 
 footer small a {
