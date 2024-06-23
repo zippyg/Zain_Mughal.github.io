@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
 nav ul {
@@ -45,7 +46,7 @@ header {
 
 header img.headshot {
     border-radius: 50%;
-    width: 250px; /* Increased width */
+    width: 300px; /* Increased width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
 }
@@ -110,6 +111,8 @@ footer {
     margin-top: 40px;
     flex-shrink: 0;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 footer small a {
