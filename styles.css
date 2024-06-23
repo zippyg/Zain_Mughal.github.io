@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 nav ul {
@@ -16,6 +17,9 @@ nav ul {
     background-color: #003E74; /* Imperial College blue */
     padding: 10px;
     border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul li {
@@ -37,6 +41,12 @@ nav ul li a:hover {
 header {
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    animation: fadeIn 2s ease-out;
 }
 
 .profile-container {
@@ -45,6 +55,7 @@ header {
     align-items: center;
     gap: 40px;
     margin-top: 20px;
+    animation: slideIn 2s ease-out;
 }
 
 header img.headshot {
@@ -68,6 +79,7 @@ header img.university-logo {
     flex: 1;
     background-color: #1E1E1E;
     border-radius: 5px;
+    animation: fadeIn 2s ease-out;
 }
 
 hgroup {
@@ -76,6 +88,9 @@ hgroup {
 
 h2, h3 {
     color: #003E74; /* Imperial College blue for headings */
+    position: relative;
+    display: inline-block;
+    animation: textGlow 2s infinite alternate;
 }
 
 section {
@@ -86,6 +101,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    animation: fadeIn 2s ease-out;
 }
 
 .project-tile {
@@ -95,6 +111,8 @@ section {
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-tile:hover {
@@ -103,6 +121,17 @@ section {
     cursor: pointer;
     background-color: #003E74;
     color: #e0e0e0;
+}
+
+.project-tile:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    animation: ripple 1s infinite;
 }
 
 .project-tile h3 {
@@ -166,4 +195,25 @@ footer small a {
 
 footer small a:hover {
     text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-100%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 10px #003E74, 0 0 20px #003E74, 0 0 30px #003E74; }
+    to { text-shadow: 0 0 20px #003E74, 0 0 30px #003E74, 0 0 40px #003E74; }
+}
+
+@keyframes ripple {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.5); opacity: 0; }
 }
