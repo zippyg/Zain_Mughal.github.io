@@ -49,7 +49,7 @@ header {
 
 header img.headshot {
     border-radius: 50%;
-    width: 300px;
+    width: 350px; /* Increased width */
     height: auto;
     object-fit: cover;
     border: 5px solid #003E74; /* Border with Imperial College blue */
@@ -57,7 +57,7 @@ header img.headshot {
 
 header img.university-logo {
     width: auto;
-    max-height: 200px;
+    max-height: 250px; /* Increased max height */
     object-fit: contain;
 }
 
@@ -114,6 +114,36 @@ figure img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    background-color: #2E2E2E;
+    border: 1px solid #003E74;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+    color: #bbbbbb;
+}
+
+form button {
+    background-color: #003E74;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00294D;
 }
 
 footer {
