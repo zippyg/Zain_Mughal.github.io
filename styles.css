@@ -45,7 +45,7 @@ header {
 
 header img.headshot {
     border-radius: 50%;
-    width: 200px; /* Increased width */
+    width: 200px;
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
 }
